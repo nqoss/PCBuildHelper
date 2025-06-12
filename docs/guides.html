@@ -99,6 +99,9 @@
                                 <div class="mt-auto">
                                     <span class="badge bg-success">Beginner</span>
                                     <span class="badge bg-secondary">30 min read</span>
+                                    <div class="mt-2">
+                                        <button class="btn btn-sm btn-outline-primary" onclick="showGuide('firstTime')">Read Guide</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -115,6 +118,9 @@
                                 <div class="mt-auto">
                                     <span class="badge bg-success">Beginner</span>
                                     <span class="badge bg-secondary">10 min read</span>
+                                    <div class="mt-2">
+                                        <button class="btn btn-sm btn-outline-primary" onclick="showGuide('tools')">Read Guide</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -160,6 +166,9 @@
                                         <div>
                                             <span class="badge bg-primary">Intermediate</span>
                                             <span class="badge bg-secondary">20 min</span>
+                                            <div class="mt-2">
+                                                <button class="btn btn-sm btn-outline-primary" onclick="showGuide('cpu')">Read Guide</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -385,6 +394,21 @@
                 </div>
             </div>
         </section>
+
+        <!-- Hidden Guide Content -->
+        <div id="guideModal" class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="guideTitle">PC Building Guide</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body" id="guideContent">
+                        <!-- Guide content will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
