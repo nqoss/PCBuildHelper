@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guides - PCBuildHelper</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    
+    <!-- Bootstrap CSS with Replit Dark Theme -->
+    <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-desktop me-2"></i>PCBuildHelper
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="builds.html">
+                            <i class="fas fa-cogs me-1"></i>PC Builds
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="featuredbuilds.html">
+                            <i class="fas fa-cogs me-1"></i>Featured Builds
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="guides.html">
+                            <i class="fas fa-book me-1"></i>Guides
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="fas fa-user me-1"></i>About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="fas fa-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow-1">
+        <!-- Page Header -->
+        <section class="bg-primary text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-4 fw-bold mb-3">PC Building Guides</h1>
+                        <p class="lead">Step-by-step tutorials and helpful tips for building your PC</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Getting Started Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col">
+                        <h2 class="h3 fw-bold mb-4">
+                            <i class="fas fa-play-circle text-success me-2"></i>Getting Started
+                        </h2>
+                    </div>
+                </div>
+                
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="text-primary mb-3">
+                                    <i class="fas fa-list-ol fa-2x"></i>
+                                </div>
+                                <h5 class="card-title">First Time Builder's Guide</h5>
+                                <p class="card-text">Complete walkthrough for building your first PC, from component selection to final assembly.</p>
+                                <div class="mt-auto">
+                                    <span class="badge bg-success">Beginner</span>
+                                    <span class="badge bg-secondary">30 min read</span>
+                                    <div class="mt-2">
+                                        <button class="btn btn-sm btn-outline-primary" onclick="showGuide('firstTime')">Read Guide</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="text-info mb-3">
+                                    <i class="fas fa-tools fa-2x"></i>
+                                </div>
+                                <h5 class="card-title">Essential Tools & Workspace</h5>
+                                <p class="card-text">What tools you need and how to set up your workspace for a successful build.</p>
+                                <div class="mt-auto">
+                                    <span class="badge bg-success">Beginner</span>
+                                    <span class="badge bg-secondary">10 min read</span>
+                                    <div class="mt-2">
+                                        <button class="btn btn-sm btn-outline-primary" onclick="showGuide('tools')">Read Guide</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="text-warning mb-3">
+                                    <i class="fas fa-exclamation-triangle fa-2x"></i>
+                                </div>
+                                <h5 class="card-title">Common Mistakes to Avoid</h5>
+                                <p class="card-text">Learn from others' mistakes and avoid the most common pitfalls in PC building.</p>
+                                <div class="mt-auto">
+                                    <span class="badge bg-warning">Important</span>
+                                    <span class="badge bg-secondary">15 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Component Guides -->
+                <div class="row mb-4">
+                    <div class="col">
+                        <h2 class="h3 fw-bold mb-4">
+                            <i class="fas fa-microchip text-primary me-2"></i>Component Guides
+                        </h2>
+                    </div>
+                </div>
+                
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <div class="text-primary me-3">
+                                        <i class="fas fa-cpu fa-2x"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="card-title fw-bold">CPU Selection Guide</h6>
+                                        <p class="card-text small">Intel vs AMD, core counts, clock speeds, and choosing the right processor for your needs.</p>
+                                        <div>
+                                            <span class="badge bg-primary">Intermediate</span>
+                                            <span class="badge bg-secondary">20 min</span>
+                                            <div class="mt-2">
+                                                <button class="btn btn-sm btn-outline-primary" onclick="showGuide('cpu')">Read Guide</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <div class="text-success me-3">
+                                        <i class="fas fa-memory fa-2x"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="card-title fw-bold">Graphics Card Guide</h6>
+                                        <p class="card-text small">Understanding GPU performance, VRAM requirements, and finding the best card for your resolution.</p>
+                                        <div>
+                                            <span class="badge bg-success">Intermediate</span>
+                                            <span class="badge bg-secondary">25 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <div class="text-info me-3">
+                                        <i class="fas fa-hdd fa-2x"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="card-title fw-bold">RAM & Storage Guide</h6>
+                                        <p class="card-text small">Memory speeds, capacity requirements, SSD vs HDD, and storage configuration best practices.</p>
+                                        <div>
+                                            <span class="badge bg-info">Beginner</span>
+                                            <span class="badge bg-secondary">15 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <div class="text-warning me-3">
+                                        <i class="fas fa-bolt fa-2x"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="card-title fw-bold">Power Supply Guide</h6>
+                                        <p class="card-text small">Wattage calculations, efficiency ratings, modular vs non-modular, and PSU quality factors.</p>
+                                        <div>
+                                            <span class="badge bg-warning">Important</span>
+                                            <span class="badge bg-secondary">18 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Assembly Guides -->
+                <div class="row mb-4">
+                    <div class="col">
+                        <h2 class="h3 fw-bold mb-4">
+                            <i class="fas fa-wrench text-danger me-2"></i>Assembly Guides
+                        </h2>
+                    </div>
+                </div>
+                
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="text-danger mb-3">
+                                    <i class="fas fa-cogs fa-2x"></i>
+                                </div>
+                                <h5 class="card-title">Step-by-Step Assembly</h5>
+                                <p class="card-text">Detailed assembly guide with photos and tips for each step of the building process.</p>
+                                <ul class="list-unstyled small">
+                                    <li>• Motherboard preparation</li>
+                                    <li>• CPU and RAM installation</li>
+                                    <li>• Cable management</li>
+                                    <li>• First boot troubleshooting</li>
+                                </ul>
+                                <div class="mt-auto">
+                                    <span class="badge bg-danger">Essential</span>
+                                    <span class="badge bg-secondary">45 min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="text-secondary mb-3">
+                                    <i class="fas fa-wind fa-2x"></i>
+                                </div>
+                                <h5 class="card-title">Cooling & Airflow</h5>
+                                <p class="card-text">Optimize your PC's cooling performance with proper fan placement and airflow management.</p>
+                                <ul class="list-unstyled small">
+                                    <li>• Fan curve optimization</li>
+                                    <li>• Case airflow principles</li>
+                                    <li>• CPU cooler installation</li>
+                                    <li>• Thermal paste application</li>
+                                </ul>
+                                <div class="mt-auto">
+                                    <span class="badge bg-secondary">Advanced</span>
+                                    <span class="badge bg-info">35 min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="text-success mb-3">
+                                    <i class="fas fa-plug fa-2x"></i>
+                                </div>
+                                <h5 class="card-title">Cable Management</h5>
+                                <p class="card-text">Create a clean, professional-looking build with proper cable routing and management techniques.</p>
+                                <ul class="list-unstyled small">
+                                    <li>• Cable routing strategies</li>
+                                    <li>• Tie-down techniques</li>
+                                    <li>• Modular PSU benefits</li>
+                                    <li>• Troubleshooting connections</li>
+                                </ul>
+                                <div class="mt-auto">
+                                    <span class="badge bg-success">Intermediate</span>
+                                    <span class="badge bg-secondary">20 min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Troubleshooting Section -->
+                <div class="row mb-4">
+                    <div class="col">
+                        <h2 class="h3 fw-bold mb-4">
+                            <i class="fas fa-question-circle text-warning me-2"></i>Troubleshooting
+                        </h2>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-power-off text-danger me-2"></i>PC Won't Turn On
+                                </h5>
+                                <p class="card-text">Common causes and solutions when your new build doesn't power on.</p>
+                                <ul class="list-unstyled small">
+                                    <li>✓ Power supply switch</li>
+                                    <li>✓ Front panel connectors</li>
+                                    <li>✓ RAM seating</li>
+                                    <li>✓ PSU connections</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-tv text-warning me-2"></i>No Display Output
+                                </h5>
+                                <p class="card-text">Troubleshooting steps when your PC turns on but shows no video signal.</p>
+                                <ul class="list-unstyled small">
+                                    <li>✓ Monitor cable connections</li>
+                                    <li>✓ GPU vs motherboard video</li>
+                                    <li>✓ RAM compatibility</li>
+                                    <li>✓ BIOS/UEFI settings</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Tips -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h3 class="fw-bold mb-4">Quick Building Tips</h3>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="text-primary mb-2">
+                                    <i class="fas fa-hand-paper fa-2x"></i>
+                                </div>
+                                <h6 class="fw-bold">Ground Yourself</h6>
+                                <p class="small mb-0">Touch a grounded metal surface or use an anti-static wrist strap to prevent component damage.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-success mb-2">
+                                    <i class="fas fa-book-open fa-2x"></i>
+                                </div>
+                                <h6 class="fw-bold">Read Manuals</h6>
+                                <p class="small mb-0">Always consult your motherboard manual for connector locations and compatibility information.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-info mb-2">
+                                    <i class="fas fa-clock fa-2x"></i>
+                                </div>
+                                <h6 class="fw-bold">Take Your Time</h6>
+                                <p class="small mb-0">Rushing leads to mistakes. Plan for 2-4 hours for your first build and don't skip steps.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hidden Guide Content -->
+        <div id="guideModal" class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="guideTitle">PC Building Guide</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body" id="guideContent">
+                        <!-- Guide content will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-desktop me-2"></i>PCBuildHelper</h5>
+                    <p class="mb-0">Your trusted source for PC build recommendations and guides.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; nqoss 2025-2026. Built with passion for PC gaming.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

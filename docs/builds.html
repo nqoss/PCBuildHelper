@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Builds - PCBuildHelper</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    
+    <!-- Bootstrap CSS with Replit Dark Theme -->
+    <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-desktop me-2"></i>PCBuildHelper
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="builds.html">
+                            <i class="fas fa-cogs me-1"></i>PC Builds
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="featuredbuilds.html">
+                            <i class="fas fa-cogs me-1"></i>Featured Builds
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guides.html">
+                            <i class="fas fa-book me-1"></i>Guides
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="fas fa-user me-1"></i>About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="fas fa-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow-1">
+        <!-- Page Header -->
+        <section class="bg-primary text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-4 fw-bold mb-3">PC Build Recommendations</h1>
+                        <p class="lead">Carefully curated PC builds for every budget and use case</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Build Categories -->
+        <section class="py-5">
+            <div class="container">
+                
+
+                <!-- Standard Gaming Builds -->
+                <div class="row mb-5">
+                    <div class="col">
+                        <h2 class="h3 fw-bold mb-4">
+                            <i class="fas fa-gamepad text-success me-2"></i>Standard Gaming Builds
+                        </h2>
+                    </div>
+                </div>
+                
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="card-title mb-0">Budget Gaming ($600-800)</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li><strong>CPU:</strong> AMD Ryzen 5 5600G</li>
+                                    <li><strong>GPU:</strong> GTX 1660 Super / RX 6500 XT</li>
+                                    <li><strong>RAM:</strong> 16GB DDR4-3200</li>
+                                    <li><strong>Storage:</strong> 500GB NVMe SSD</li>
+                                    <li><strong>Motherboard:</strong> B450M Pro4</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="badge bg-success">1080p Gaming</span>
+                                    <span class="badge bg-secondary">60+ FPS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="card-title mb-0">Mid-Range Gaming ($1000-1400)</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li><strong>CPU:</strong> AMD Ryzen 5 7600X</li>
+                                    <li><strong>GPU:</strong> RTX 4060 Ti / RX 7700 XT</li>
+                                    <li><strong>RAM:</strong> 16GB DDR5-5600</li>
+                                    <li><strong>Storage:</strong> 1TB NVMe SSD</li>
+                                    <li><strong>Motherboard:</strong> B650 Chipset</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="badge bg-primary">1440p Gaming</span>
+                                    <span class="badge bg-secondary">High Settings</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-danger text-white">
+                                <h5 class="card-title mb-0">High-End Gaming ($2000+)</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li><strong>CPU:</strong> Intel i7-13700K / AMD 7800X3D</li>
+                                    <li><strong>GPU:</strong> RTX 4080 / RX 7900 XTX</li>
+                                    <li><strong>RAM:</strong> 32GB DDR5-6000</li>
+                                    <li><strong>Storage:</strong> 2TB NVMe SSD</li>
+                                    <li><strong>Motherboard:</strong> X670E / Z790</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="badge bg-danger">4K Gaming</span>
+                                    <span class="badge bg-secondary">Ultra Settings</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workstation Builds -->
+                <div class="row mb-4">
+                    <div class="col">
+                        <h2 class="h3 fw-bold mb-4">
+                            <i class="fas fa-briefcase text-info me-2"></i>Workstation Builds
+                        </h2>
+                    </div>
+                </div>
+                
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-info text-white">
+                                <h5 class="card-title mb-0">Content Creation ($1500-2000)</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li><strong>CPU:</strong> AMD Ryzen 9 7900X</li>
+                                    <li><strong>GPU:</strong> RTX 4070 / RX 7800 XT</li>
+                                    <li><strong>RAM:</strong> 32GB DDR5-5600</li>
+                                    <li><strong>Storage:</strong> 2TB NVMe SSD</li>
+                                    <li><strong>Motherboard:</strong> X670 Chipset</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="badge bg-info">Video Editing</span>
+                                    <span class="badge bg-secondary">Streaming</span>
+                                    <span class="badge bg-warning">3D Rendering</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="card-title mb-0">Professional Workstation ($3000+)</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li><strong>CPU:</strong> AMD Threadripper / Intel Xeon</li>
+                                    <li><strong>GPU:</strong> RTX 4090 / Quadro RTX</li>
+                                    <li><strong>RAM:</strong> 64GB+ DDR5 ECC</li>
+                                    <li><strong>Storage:</strong> 4TB+ NVMe RAID</li>
+                                    <li><strong>Motherboard:</strong> TRX40 / W680</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="badge bg-warning text-dark">CAD/CAM</span>
+                                    <span class="badge bg-secondary">AI/ML</span>
+                                    <span class="badge bg-danger">4K Video</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Budget & Office Builds -->
+                <div class="row mb-4">
+                    <div class="col">
+                        <h2 class="h3 fw-bold mb-4">
+                            <i class="fas fa-home text-primary me-2"></i>Home & Office Builds
+                        </h2>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-secondary text-white">
+                                <h5 class="card-title mb-0">Budget Office ($400-600)</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li><strong>CPU:</strong> AMD Ryzen 5 5600G (APU)</li>
+                                    <li><strong>GPU:</strong> Integrated Radeon Graphics</li>
+                                    <li><strong>RAM:</strong> 16GB DDR4-3200</li>
+                                    <li><strong>Storage:</strong> 500GB NVMe SSD</li>
+                                    <li><strong>Motherboard:</strong> A520M Chipset</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="badge bg-secondary">Office Work</span>
+                                    <span class="badge bg-primary">Web Browsing</span>
+                                    <span class="badge bg-success">Energy Efficient</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-dark text-white">
+                                <h5 class="card-title mb-0">Compact HTPC ($500-700)</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li><strong>CPU:</strong> Intel i5-12400</li>
+                                    <li><strong>GPU:</strong> Intel UHD Graphics</li>
+                                    <li><strong>RAM:</strong> 16GB DDR4-3200</li>
+                                    <li><strong>Storage:</strong> 1TB NVMe SSD</li>
+                                    <li><strong>Case:</strong> Mini-ITX Form Factor</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="badge bg-dark">Media Center</span>
+                                    <span class="badge bg-info">4K Playback</span>
+                                    <span class="badge bg-success">Silent Operation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Build Notes -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h3 class="fw-bold mb-4 text-center">Important Build Notes</h3>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="text-primary me-3">
+                                        <i class="fas fa-info-circle fa-2x"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold">Compatibility</h6>
+                                        <p class="small mb-0">All components in each build are tested for compatibility. Always verify socket types and power requirements.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="text-warning me-3">
+                                        <i class="fas fa-bolt fa-2x"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold">Power Supply</h6>
+                                        <p class="small mb-0">PSU recommendations include 20% headroom. Choose 80+ Gold certified units for efficiency.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="text-success me-3">
+                                        <i class="fas fa-dollar-sign fa-2x"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold">Pricing</h6>
+                                        <p class="small mb-0">Prices fluctuate daily. Check current market prices and availability before purchasing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="text-info me-3">
+                                        <i class="fas fa-tools fa-2x"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold">Future Upgrades</h6>
+                                        <p class="small mb-0">Consider upgrade paths when choosing motherboard and PSU to extend your build's lifespan.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-desktop me-2"></i>PCBuildHelper</h5>
+                    <p class="mb-0">Your trusted source for PC build recommendations and guides.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; nqoss 2025-2026. Built with passion for PC gaming.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
